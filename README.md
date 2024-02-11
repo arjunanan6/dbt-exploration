@@ -25,6 +25,12 @@ The source data is contained in the data_sources directory.
 
 All the models, tests, analyses, etc written for dbt can be found in the _dbt_arjun_ directory.
 
+## dbt specific initialisation
+
+- Switch to the project directory and run `dbt init`. (dbt_arjun in this case). This requires that a profile is set up. 
+- Run models with: `dbt run` or selected by supplying `-s` or `--selected`
+- Run tests with: `dbt test` or selected by supplying `-s` or `--selected`
+
 ## Orchestration
 
 This was unexplored, but could easily be done with any orchestration tool such as Airflow, dagster etc. Here's a rough sketch of how to go about it:
